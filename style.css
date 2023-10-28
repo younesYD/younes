@@ -1,120 +1,59 @@
 *{
     margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 0; 
 }
 body{
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-}
-#screen{
-    height: 500px;
-    width: 99%;
-    border: solid 10px black;
-    color: white;
-    font-size: 30px;
-    font-family: sans-serif ;
-    font-weight: 600;
-    padding: 10px;
-    background-color: #123;
-}
-.Clor{
-    padding-left: 20px;
-    background-color: rgb(0, 0, 0);
-    height: 70px;
-    width: 100%;
-    padding-bottom: 10px;
-}
-.Clor div{
-    height: 70px;
-    width: 70px;
-    border-radius: 5px;
-    background-color: white;
-    border: solid 2px black;
-    float: left;
-    transition: 0.1s;
-}
-.Clor div:hover{
-    scale: 1.1;
-}
-
-#red{
-    background-color: red;
-}
-#green{
-    background-color: rgb(0, 255, 0);
-}
-#yellow{
-    background-color: yellow;
-}
-#blue{
-    background-color: blue;
-}
-#pink{
-    background-color: palevioletred;
-}
-#purple{
-    background-color: purple;
-}
-#orange{
-    background-color: orange;
-}
-#white{
-    background-color: white;
-}
-.clav{
-    height: 40%;
-    width: 100%;
-    border: solid 1px; 
-    background-color: rgba(11, 11, 11, 0.963);
-    border-radius: 10px;
-    padding-left: 20px;
-    display: flex;
-    align-items: end;
-}
-#leter{
-    height: 90%;
-    width: 100%;
-    margin-top: 20px;
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(10,100px);
-    grid-template-rows: repeat(3,95px);
-    gap: 15px;
-    padding: 20px;
-}
-.D,.space{
-    color: aliceblue;
-    background-color: rgb(0, 0, 0);
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    border-color: white;
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #222;
     font-family: sans-serif;
-    transition: .4s;
-    box-shadow: -7px -7px 5px rgb(0, 0, 0);
 }
-#leter Div:hover{
-    transform: scale(1.05);
+.container{
+    width: 80%;
+    margin: auto;
 }
-#leter div:active{
-    transform: scale(0.9);
+.head{
+    text-align: center;
+    color: #fff;
+    margin: 25px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.space{
-    grid-column: 4/7;
+input{
+    width: 100%;
+    height: 20px;
+    margin: 5px 0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
 }
-#menu{
-    height: 50px;
-    margin-top: 10px;
-    transition: .2s;
+button{
+    width: 100%;
+    height: 35px;
+    background-color: gold;
+    border-radius: 25px;
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    transition: .3s;
+    margin: 5px 0;
 }
-#menu:hover{
-    scale: 1.1;
+button:hover{
+    background-color: yellow;
+    letter-spacing: 1px;
 }
-.none{
-    display: none;
+table{
+    width: 100%;
+    color: #fff;
+    margin: 15px 5px;
+}
+th{
+    text-transform: uppercase;
+}
+th,td{
+    text-align: center;
 }

@@ -3,61 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>clavTXT</title>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Days in GYM</title>
 </head>
 <body>
-    <div id ="screen"></div>
-    <div class="Clor">
-        <div  id="white"  onclick="color('white')"></div>
-        <div  id="yellow"  onclick="color('yellow')"></div>
-        <div  id="green"  onclick="color('lime')"></div>
-        <div  id="cyan"  onclick="color('cyan')" style="background-color: cyan;"></div>
-        <div  id="blue"  onclick="color('blue')"></div>
-        <div  id="purple"  onclick="color('purple')"></div>
-        <div  id="pink"  onclick="color('palevioletred')"></div>
-        <div  id="magenta"  onclick="color('magenta')" style="background-color: magenta;"></div>
-        <div  id="red" onclick="color('red')"></div>
-        <div  id="orange"  onclick="color('orange')"></div>
-        
-    </div>
-    <div class="clav">
-        <div id="leter">
-            <div id="leterDiv1" class="D" onclick="leter('a')">A</div>
-            <div id="leterDiv2" class="D" onclick="leter('z')">Z</div>
-            <div id="leterDiv3" class="D" onclick="leter('e')">E</div>
-            <div id="leterDiv4" class="D" onclick="leter('r')">R</div>
-            <div id="leterDiv5" class="D" onclick="leter('t')">T</div>
-            <div id="leterDiv6" class="D" onclick="leter('y')">Y</div>
-            <div id="leterDiv7" class="D" onclick="leter('u')">U</div>
-            <div id="leterDiv8" class="D" onclick="leter('i')">I</div>
-            <div id="leterDiv9" class="D" onclick="leter('o')">O</div>
-            <div id="leterDiv10" class="D" onclick="leter('p')">P</div>
+    <div class="container">
+        <div class="head">
+            <h1>GYM</h1>
+            <p>my days in gym</p>
+        </div>
+        <div class="inputes">
+            <input placeholder="Day" type="text" id="Day">
+            <input placeholder="exercice" type="text" id="exercice">
+            <input placeholder="Duration(min)" type="text" id="Duration">
+            <button id="create">Create</button>
+        </div>
+        <div class="outputes">
+            <table>
+                <tr>
+                    <th>Quotas</th>
+                    <th>Days</th>
+                    <th>Exercice</th>
+                    <th>Duration</th>
+                    <th>Delate</th>
+                </tr>
 
-            <div id="leterDiv11" class="D" class="D" onclick="leter('q')">Q</div>
-            <div id="leterDiv12" class="D" onclick="leter('s')">S</div>
-            <div id="leterDiv13" class="D" onclick="leter('d')">D</div>
-            <div id="leterDiv14" class="D" onclick="leter('f')">F</div>
-            <div id="leterDiv15" class="D" onclick="leter('g')">G</div>
-            <div id="leterDiv16" class="D" onclick="leter('h')">H</div>
-            <div id="leterDiv17" class="D" onclick="leter('j')">J</div>
-            <div id="leterDiv18" class="D" onclick="leter('k')">K</div>
-            <div id="leterDiv19" class="D" onclick="leter('l')">L</div>
-            <div id="leterDiv20" class="D" onclick="leter('m')">M</div>
-
-            <div id="leterDiv21" class="D" onclick="leter('w')">W</div>
-            <div id="leterDiv22" class="D" onclick="leter('x')">X</div>
-            <div id="leterDiv23" class="D" onclick="leter('c')">C</div>
-            <div id="leterDiv24"  onclick="space()" class="space"></div>
-            <div id="leterDiv25" class="D" onclick="Delate()">-</div>
-            <div id="leterDiv26" class="D" onclick="leter('v')">V</div>
-            <div id="leterDiv27" class="D" onclick="leter('b')">B</div>
-            <div id="leterDiv28" class="D" onclick="leter('n')">N</div>
-            
-
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="react.js"></script>
 </body>
-
 </html>
